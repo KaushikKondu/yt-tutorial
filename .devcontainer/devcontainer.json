@@ -1,0 +1,32 @@
+{
+    "name": "yt-tutorial",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "yt-tutorial",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode-remote.remote-containers"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python3",
+                "python.linting.enabled": true,
+                "python.linting.pylintEnabled": true,
+                "python.formatting.provider": "black",
+                "editor.formatOnSave": true,
+                "editor.rulers": [
+                    88
+                ],
+                "files.exclude": {
+                    "**/__pycache__": true,
+                    "**/.pytest_cache": true,
+                    "**/*.pyc": true
+                }
+            }
+        }
+    },
+    "forwardPorts": []
+}

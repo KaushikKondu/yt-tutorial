@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  yt-tutorial:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/workspace:cached
+      - ~/.gitconfig:/root/.gitconfig:ro
+    environment:
+      - TZ=Asia/Kolkata
+    command: sleep infinity
